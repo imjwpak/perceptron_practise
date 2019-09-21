@@ -1,4 +1,5 @@
 from dlearn.iris import IrisModel
+from dlearn.lena import LenaModel
 
 if __name__ == '__main__':
     def print_menu():
@@ -6,6 +7,7 @@ if __name__ == '__main__':
         print('1. IRIS DATA')
         print('2. IRIS SCATTER')
         print('3. IRIS 결정경계')
+        print('4. LENA 이미지 인식')
         return input('CHOOSE ONE : ')
 
     while 1:
@@ -25,4 +27,8 @@ if __name__ == '__main__':
         elif menu == '3':
             m = IrisModel()
             m.plot_decision_regions()
+            break
+        elif menu == '4':
+            m = LenaModel()
+            m.execute()
             break
