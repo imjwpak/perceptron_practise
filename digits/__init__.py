@@ -5,6 +5,7 @@ if __name__ == '__main__':
     def print_menu():
         print('0. EXIT')
         print('1. 손글씨 인식')
+        print('2. 손글씨 인식 머신러닝')
 
         return input('CHOOSE ONE : ')
 
@@ -19,7 +20,8 @@ if __name__ == '__main__':
             m.read_file()
             break
         elif menu == '2':
-
+            m = HandWriting()
+            m.learning()
             break
         elif menu == '3':
 
