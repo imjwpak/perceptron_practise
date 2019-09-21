@@ -6,6 +6,7 @@ if __name__ == '__main__':
         print('0. EXIT')
         print('1. 손글씨 인식')
         print('2. 손글씨 인식 머신러닝')
+        print('2. 손글씨 인식 테스트')
 
         return input('CHOOSE ONE : ')
 
@@ -24,5 +25,12 @@ if __name__ == '__main__':
             m.learning()
             break
         elif menu == '3':
+            m = HandWriting()
+            fname = './data/my2.png' # 4, 9는 파일 이상함
+            print('테스트')
 
+            print(m.test(fname))
+
+            break
+        elif menu == '4':
             break
